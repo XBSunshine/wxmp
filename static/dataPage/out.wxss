@@ -1,0 +1,20 @@
+.title {
+  font-size: x-large;
+  font-weight: bolder;
+}
+.title-little{
+  font-size: large;
+  font-weight: bolder;
+}
+.author{
+  color: gray;
+}
+
+.cellsClass {
+  background-color: #ebebc1;
+  font-size:30rpx;
+}
+.hoverClass{
+  font-weight: bolder;
+  color: #6d6dfc;
+}

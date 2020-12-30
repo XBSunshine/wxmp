@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class="page__bd">
+  <mp-searchbar bindclear="bindclear" search="{{search}}" cancel="{{false}}" throttle="{{0}}"></mp-searchbar>
+</view>
+<mp-cells>
+  <recycle-view batch="{{batchSetRecycleData}}" id="recycleId" enable-back-to-top="{{true}}">
+    <!-- <recycle-item slot="before">趣闻轶事</recycle-item> -->
+    <recycle-item wx:for="{{recycleList}}" wx:key="id">
+      <mp-cell hover link bindtap="bindViewTap" data-param="{{item.page}}">
+        <view style="width:630rpx;height:25px;">
+          <mp-icon icon="{{item.icon}}" type="{{item.type}}" color="{{item.color}}" size="{{20}}"></mp-icon>
+          <view style="display: inline-block;vertical-align:middle; font-size: 15px;margin-left:20rpx;">{{item.title}}</view>
+        </view>
+      </mp-cell>
+    </recycle-item>
+  </recycle-view>
+</mp-cells>
+
+<!-- <view class="container">
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->

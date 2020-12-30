@@ -1,0 +1,21 @@
+{
+  "navigationBarTitleText": "文摘轶事",
+  "usingComponents": {
+    "mp-dialog": "/miniprogram_npm/weui-miniprogram/dialog/dialog",
+    "mp-cells": "/miniprogram_npm/weui-miniprogram/cells/cells",
+    "mp-cell": "/miniprogram_npm/weui-miniprogram/cell/cell",
+    "mp-badge": "/miniprogram_npm/weui-miniprogram/badge/badge",
+    "mp-toptips": "/miniprogram_npm/weui-miniprogram/toptips/toptips",
+    "mp-checkbox": "/miniprogram_npm/weui-miniprogram/checkbox/checkbox",
+    "mp-checkbox-group": "/miniprogram_npm/weui-miniprogram/checkbox-group/checkbox-group",
+    "mp-form-page": "/miniprogram_npm/weui-miniprogram/form-page/form-page",
+    "mp-form": "/miniprogram_npm/weui-miniprogram/form/form",
+    "mp-slideview": "/miniprogram_npm/weui-miniprogram/slideview/slideview",
+    "mp-halfScreenDialog": "/miniprogram_npm/weui-miniprogram/half-screen-dialog/half-screen-dialog",
+    "mp-tabbar": "/miniprogram_npm/weui-miniprogram/tabbar/tabbar",
+    "mp-searchbar": "/miniprogram_npm/weui-miniprogram/searchbar/searchbar",
+    "recycle-view": "miniprogram-recycle-view/recycle-view",
+    "recycle-item": "miniprogram-recycle-view/recycle-item",
+    "mp-icon": "/miniprogram_npm/weui-miniprogram/icon/icon"
+  }
+}

@@ -1,0 +1,48 @@
+<view style="margin-top:-20rpx;">
+  <mp-cells>
+    <mp-cell link hover>
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称
+      </button>
+      <view bindtap="open" data-param="user" wx:if="{{hasUserInfo || !canIUse}}" slot="title" style="position: relative;margin-right: 10px;">
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      </view>
+      <view bindtap="open" data-param="user" wx:if="{{hasUserInfo || !canIUse}}" class="userinfo-nickname">{{userInfo.nickName}}</view>
+    </mp-cell>
+  </mp-cells>
+</view>
+<view>
+  <mp-cells>
+    <mp-cell link hover bindtap="open" data-param="favor">
+      <mp-icon icon="like" type="field" color="red" size="{{20}}"></mp-icon>
+      <view style="display: inline-block;vertical-align:middle; font-size: 15px;margin-left:10rpx;">收藏</view>
+    </mp-cell>
+    <mp-cell link hover bindtap="open" data-param="picture">
+      <mp-icon icon="camera" color="green" size="{{20}}"></mp-icon>
+      <view style="display: inline-block;vertical-align:middle; font-size: 15px;margin-left:10rpx;">相册</view>
+    </mp-cell>
+    <mp-cell link hover bindtap="open" data-param="music">
+      <mp-icon icon="music" color="blue" size="{{20}}"></mp-icon>
+      <view style="display: inline-block;vertical-align:middle; font-size: 15px;margin-left:10rpx;">音乐</view>
+    </mp-cell>
+    <mp-cell link hover bindtap="open" data-param="video">
+      <mp-icon icon="video-call" color="orange" size="{{20}}"></mp-icon>
+      <view style="display: inline-block;vertical-align:middle; font-size: 15px;margin-left:10rpx;">视频</view>
+    </mp-cell>
+  </mp-cells>
+  <mp-cells>
+    <mp-cell link hover bindtap="open" data-param="setting">
+      <mp-icon icon="setting" color="black" size="{{20}}"></mp-icon>
+      <view style="display: inline-block;vertical-align:middle; font-size: 15px;margin-left:10rpx;">设置</view>
+    </mp-cell>
+    <mp-cell link hover bindtap="open" data-param="about">
+      <mp-icon icon="more2" color="#E9967A" size="{{20}}"></mp-icon>
+      <view style="display: inline-block;vertical-align:middle; font-size: 15px;margin-left:10rpx;">关于</view>
+    </mp-cell>
+  </mp-cells>
+</view>
+<view style="margin-top:20rpx;">
+  <button class="weui-btn" type="primary" bindtap="submitForm" style="width:100%;">退出</button>
+</view>
+<mp-halfScreenDialog bindbuttontap="buttontap" show="{{show}}" closabled="{{false}}" maskClosable="{{false}}"
+title="温馨提示" desc="功能开发中,敬请期待..." buttons="{{buttons}}"></mp-halfScreenDialog>
+<mp-toptips msg="{{'退出成功'}}" type="info" show="{{showError}}"></mp-toptips>

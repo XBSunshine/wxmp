@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "音乐封面",
+  "usingComponents": {
+    "mp-slideview": "/miniprogram_npm/weui-miniprogram/slideview/slideview",
+    "recycle-view": "miniprogram-recycle-view/recycle-view",
+    "recycle-item": "miniprogram-recycle-view/recycle-item",
+    "mp-col": "@miniprogram-component-plus/col",
+    "mp-row": "@miniprogram-component-plus/row",
+    "mp-icon": "/miniprogram_npm/weui-miniprogram/icon/icon",
+    "mp-toptips": "/miniprogram_npm/weui-miniprogram/toptips/toptips"
+  }
+}

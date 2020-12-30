@@ -1,0 +1,14 @@
+<mp-cells ext-class="extClass" title="尘缘中琴声，月皎波澄。人们神怡心旷之际，耳边一阵微风忽起伏。远远传来缕缕琴声，悠悠扬扬，一种琴韵却令人回肠荡气。虽琴声如诉，所有最静好的时光，最灿烂的风霜，而或最初的模样，都缓缓流淌起来。而琴声如诉，是在过尽千帆之后，看岁月把心迹澄清，是在身隔沧海之时，沉淀所有的波澜壮阔。在懂得之后，每一个音符下，都埋藏一颗平静而柔韧的心灵。">
+</mp-cells>
+<mp-cells>
+  <recycle-view batch="{{batchSetRecycleData}}" id="recycleIdforMusic" bindscrolltolower="bindscrolltolower"
+    enable-back-to-top="{{true}}">
+    <recycle-item wx:for="{{recycleList}}" wx:key="id" style="width:750rpx;">
+      <mp-cell ext-class="cellExtClass">
+        <audio poster="{{item.poster}}" name="{{item.name}}" author="{{item.author}}" src="{{item.src}}" id="{{item._id}}"
+          controls loop></audio>
+          <view hover-class="hoverClass" slot="footer" style="color:red;font-size:small;width:70rpx;height:50rpx;" bindtap="audioPause" data-param="{{item._id}}">关闭</view>
+      </mp-cell>
+    </recycle-item>
+  </recycle-view>
+</mp-cells>

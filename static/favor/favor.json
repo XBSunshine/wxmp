@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "网站收藏",
+  "usingComponents": {
+    "mp-icon": "/miniprogram_npm/weui-miniprogram/icon/icon",
+    "mp-dialog": "/miniprogram_npm/weui-miniprogram/dialog/dialog"
+  }
+}

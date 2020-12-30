@@ -1,0 +1,8 @@
+<!--logs.wxml-->
+<mp-cells>
+  <mp-cell wx:for="{{logs}}" wx:for-item="log">
+    <mp-icon icon="time" color="#006400" size="{{20}}"></mp-icon>
+    <view style="display: inline-block;vertical-align:middle; font-size: 15px;margin-left:20rpx;">{{index + 1}}. {{log}}
+    </view>
+  </mp-cell>
+</mp-cells>

@@ -1,0 +1,38 @@
+.extClass{
+  width: 700rpx;
+  margin: 0 auto;
+  box-shadow: darkgrey 10px 10px 30px 5px ;
+}
+.add_icon {
+  position: fixed;
+  width: 42px;
+  height: 42px;
+  bottom: 30px;
+  right: 20px;
+  opacity:1;
+  background-color:#03be03;
+  border-radius: 50%;
+  z-index: 100;
+}
+
+.hoverClass {
+  opacity:0.6;
+}
+.orange{
+  background-color: orange;
+}
+.red{
+  background-color: red;
+}
+.green{
+  background-color: green;
+}
+.gray{
+  background-color: gray;
+}
+.purple{
+  background-color: purple;
+}
+.yellow{
+  background-color: yellow;
+}

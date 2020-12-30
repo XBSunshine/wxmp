@@ -1,0 +1,4 @@
+/* pages/cover/edit/edit.wxss */
+.button {
+  background-color: rgb(114, 219, 114)
+}

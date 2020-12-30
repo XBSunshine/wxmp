@@ -1,0 +1,78 @@
+{
+  "entryPagePath": "pages/note/note",
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/tests/tests",
+    "pages/myinfo/myinfo",
+    "static/dataPage/out",
+    "static/dataPage/ruanyifeng-01",
+    "static/dataPage/ruanyifeng-02",
+    "static/dataPage/ruanyifeng-03",
+    "static/dataPage/ruanyifeng-04",
+    "static/dataPage/loveGrave",
+    "static/dataPage/selfSummary",
+    "static/video/securityintroduce",
+    "static/image/myPicture",
+    "static/audio/audioView",
+    "static/about/about",
+    "static/setting/setting",
+    "static/userDetail/user",
+    "static/music/music",
+    "static/favor/favor",
+    "pages/note/note",
+    "static/noteEdit/noteEdit",
+    "pages/cover/cover",
+    "pages/cover/edit/edit"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "自由音乐",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "custom": false,
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "文摘",
+        "iconPath": "image/book.png",
+        "selectedIconPath": "image/book_touch.png"
+      },
+      {
+        "pagePath": "pages/cover/cover",
+        "text": "封面",
+        "iconPath": "image/log.png",
+        "selectedIconPath": "image/log-check.png"
+      },
+      {
+        "pagePath": "pages/note/note",
+        "text": "笔记本",
+        "iconPath": "image/note.png",
+        "selectedIconPath": "image/note_touch.png"
+      },
+      {
+        "pagePath": "pages/tests/tests",
+        "text": "乐享",
+        "iconPath": "image/share.png",
+        "selectedIconPath": "image/share-touch.png"
+      },
+      {
+        "pagePath": "pages/myinfo/myinfo",
+        "text": "我的",
+        "iconPath": "image/me.png",
+        "selectedIconPath": "image/me-touch.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib": {
+    "weui": true
+  },
+  "usingComponents": {
+    "mp-cells": "/miniprogram_npm/weui-miniprogram/cells/cells",
+    "mp-cell": "/miniprogram_npm/weui-miniprogram/cell/cell"
+  }
+}

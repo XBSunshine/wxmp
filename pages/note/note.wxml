@@ -1,0 +1,9 @@
+<mp-cells wx:for="{{notesList}}" wx:key="id" ext-class="extClass">
+  <mp-slideview buttons="{{slideButtons}}" icon="{{true}}" bindbuttontap="slideButtonTap" data-param="{{index}}">
+    <mp-cell ext-class="{{item.color}}" hover link bindtap="showDetail" data-param="{{item}}" value="{{item.title}}">
+    </mp-cell>
+  </mp-slideview>
+</mp-cells>
+<view hover-class="hoverClass" class="add_icon" bindtap="goToEdit">
+  <image src="/image/add.png" style="height:42px;width:42px;"></image>
+</view>

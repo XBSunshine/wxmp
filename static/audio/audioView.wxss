@@ -1,0 +1,13 @@
+.add_icon {
+  position: fixed;
+  width: 42px;
+  height: 42px;
+  bottom: 30px;
+  right: 20px;
+  opacity:1;
+  z-index: 999;
+}
+
+.hoverClass {
+  opacity:0.6;
+}

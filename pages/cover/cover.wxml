@@ -1,0 +1,31 @@
+<mp-cells>
+  <recycle-view batch="{{batchSetRecycleData}}" id="recycleIdforCover" bindscrolltolower="bindscrolltolower"
+    enable-back-to-top="{{true}}">
+    <recycle-item wx:for="{{recycleList}}" wx:key="id" style="width:750rpx;">
+      <mp-slideview buttons="{{slideButtons}}" bindbuttontap="slideButtonTap" data-param="{{item}}"
+        data-index="{{index}}">
+        <mp-cell ext-class="cellExtClass" hover link bindtap="choose" data-id="{{item.id}}">
+          <image slot="title" src="{{item.img}}" style="height:200rpx;width:200rpx;" data-id="{{item.id}}"></image>
+          <view slot="footer">
+            <mp-row data-id="{{item.id}}">
+              <mp-col>
+                <view style="font-size: 18px;margin-left:20rpx;font-weight:550;width:400rpx;color:black;">
+                  名称：{{item.name}}</view>
+              </mp-col>
+            </mp-row>
+            <mp-row data-id="{{item.id}}">
+              <mp-col>
+                <view style="font-size: 15px;margin-left:20rpx;width:400rpx">
+                  描述：{{item.remark}}</view>
+              </mp-col>
+            </mp-row>
+          </view>
+        </mp-cell>
+      </mp-slideview>
+    </recycle-item>
+  </recycle-view>
+</mp-cells>
+<view hover-class="hoverClass" class="add_icon" bindtap="goToEdit">
+  <image src="/image/add.png" style="height:42px;width:42px;"></image>
+</view>
+<mp-toptips msg="{{tips.message}}" type="{{tips.type}}" show="{{tips.show}}"></mp-toptips>

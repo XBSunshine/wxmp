@@ -1,0 +1,17 @@
+<mp-cells>
+  <recycle-view batch="{{batchSetRecycleData}}" id="recycleIdforaudio" bindscrolltolower="bindscrolltolower" enable-back-to-top="{{true}}">
+    <recycle-item wx:for="{{recycleList}}" wx:key="id">
+      <mp-cell hover link catchtap="chooseMusic" data-param="{{item}}">
+        <view style="width:630rpx;height:20px;">
+          <mp-row catchtap="chooseMusic" data-param="{{item}}">
+            <mp-col>
+              <mp-icon icon="music" color="#faaea1" size="{{20}}"></mp-icon>
+              <view style="display: inline-block;vertical-align:middle; font-size: 15px;margin-left:20rpx;">
+                <text style="color:black;font-weight:bolder">{{item.name}}</text>    - <text style="opacity:0.4;">{{item.author}}</text></view>
+            </mp-col>
+          </mp-row>
+        </view>
+      </mp-cell>
+    </recycle-item>
+  </recycle-view>
+</mp-cells>

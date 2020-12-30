@@ -1,0 +1,279 @@
+<view>
+  <mp-cells>
+    <mp-cell ext-class="cellsClass">
+      <view>
+        <text class="title">微信小程序入门教程之二：页面样式</text>
+      </view>
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">
+      <view>
+        <rich-text nodes='<hr style="width:100%;color:gray;"/>'></rich-text>
+      </view>
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">
+      <text class="author">作者：阮一峰</text>
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">
+      <text class="author">日期：2020年10月27日</text>
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">
+      <text>这个系列的</text>
+      <text style="color:blue;text-decoration:underline;" bindtap="lastPage">上一篇教程</text>
+      <text>，教大家写了一个最简单的 Hello world 微信小程序。</text>
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">但是，那只是一个裸页面，并不好看。今天接着往下讲，如何为这个页面添加样式，使它看上去更美观，教大家写出实际可以使用的页面。</mp-cell>
+    <mp-cell ext-class="cellsClass">所有示例的完整代码，都可以从 GitHub 的代码仓库下载。</mp-cell>
+    <mp-cell ext-class="cellsClass">
+      <image style="margin:0 auto;display:block;border-radius: 5%;"
+        src="https://www.wangbase.com/blogimg/asset/202010/bg2020100911.jpg"></image>
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">
+      <view>
+        <text class="title">一、总体样式</text>
+      </view>
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">
+      <view>
+        <rich-text nodes='<hr style="width:100%;color:gray;"/>'></rich-text>
+      </view>
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">微信小程序允许在顶层放置一个app.wxss文件，里面采用 CSS 语法设置页面样式。这个文件的设置，对所有页面都有效。</mp-cell>
+    <mp-cell ext-class="cellsClass">注意，小程序虽然使用 CSS 样式，但是样式文件的后缀名一律要写成.wxss。</mp-cell>
+    <mp-cell ext-class="cellsClass">打开上一篇教程的示例，在项目顶层新建一个app.wxss文件，内容如下。</mp-cell>
+    <mp-cell ext-class="cellsClass">
+      <view style="border-radius:5%;background-color:white;padding:20rpx;">
+        page {
+        background-color: pink;
+        }
+        text {
+        font-size: 24pt;
+        color: blue;
+        }
+      </view>
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">上面代码将整个页面的背景色设为粉红，然后将 [text] 标签的字体大小设为 24 磅，字体颜色设为蓝色。</mp-cell>
+    <mp-cell ext-class="cellsClass">开发者工具导入代码之后，得到了下面的渲染结果。</mp-cell>
+    <mp-cell ext-class="cellsClass">
+      <image style="margin:0 auto;display:block;border-radius: 5%;"
+        src="https://www.wangbase.com/blogimg/asset/202010/bg2020100303.jpg"></image>
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">
+      可以看到，页面的背景色变成粉红，文本字体变大了，字体颜色变成了蓝色。
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">实际开发中，直接对 [text] 标签设置样式，会影响到所有的文本。一般不这样用，而是通过class属性区分不同类型的文本，然后再对每种class设置样式。
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">
+      打开pages/home/home.wxml文件，把页面代码改成下面这样。
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">
+      <view style="border-radius:5%;background-color:white;padding:20rpx;">
+        {{value1}}
+      </view>
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">
+      上面代码中，我们为 [text] 标签加上了一个class属性，值为title。
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">
+      然后，将顶层的app.wxss文件改掉，不再直接对 [text] 设置样式，改成对class设置样式。
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">
+      <view style="border-radius:5%;background-color:white;padding:20rpx;">
+        page {
+        background-color: pink;
+        }
+        .title {
+        font-size: 24pt;
+        color: blue;
+        }
+      </view>
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">
+      上面代码中，样式设置在 class 上面（.title），这样就可以让不同的class呈现不同的样式。修改之后，页面的渲染结果并不会有变化。
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">
+      这个示例的完整代码，可以到代码仓库查看。
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">
+      <view>
+        <text class="title">二、Flex 布局</text>
+      </view>
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">
+      <view>
+        <rich-text nodes='<hr style="width:100%;color:gray;"/>'></rich-text>
+      </view>
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">
+      各种页面元素的位置关系，称为布局（layout），小程序官方推荐使用 Flex 布局。不熟悉这种布局的同学，可以看看我写的《Flex 布局教程》。
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">
+      下面演示如何通过 Flex 布局，将上面示例的文本放置到页面中央。
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">
+      首先，在pages/home目录里面，新建一个home.wxss文件，这个文件设置的样式，只对 home 页面生效。这是因为每个页面通常有不一样的布局，所以页面布局一般不写在全局的app.wxss里面。
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">
+      然后，home.wxss文件写入下面的内容。
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">
+      <view style="border-radius:5%;background-color:white;padding:20rpx;">
+        page {
+        height: 100%;
+        width: 750rpx;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+      </view>
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">
+      开发者工具导入项目代码，页面渲染结果如下。
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">
+      <image style="margin:0 auto;display:block;border-radius: 5%;"
+        src="https://www.wangbase.com/blogimg/asset/202010/bg2020100304.jpg"></image>
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">下面解释一下上面这段 WXSS 代码，还是很简单的。</mp-cell>
+    <mp-cell ext-class="cellsClass">
+      （1）height: 100%;：页面高度为整个屏幕高度。
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">
+      （2）width: 750rpx;：页面宽度为整个屏幕宽度。
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">w
+      注意，这里单位是rpx，而不是px。rpx是小程序为适应不同宽度的手机屏幕，而发明的一种长度单位。不管什么手机屏幕，宽度一律为750rpx。它的好处是换算简单，如果一个元素的宽度是页面的一半，只要写成width:
+      375rpx;即可。
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">
+      （3）display: flex;：整个页面（page）采用 Flex 布局。
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">
+      （4）justify-content: center;：页面的一级子元素（这个示例是 [view] ）水平居中。
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">
+      （5）align-items: center;：页面的一级子元素（这个示例是 [view] ）垂直居中。一个元素同时水平居中和垂直中央，就相当于处在页面的中央了。
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">
+      这个示例的完整代码，可以到代码仓库查看。
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">
+      <view>
+        <text class="title">三、WeUI</text>
+      </view>
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">
+      <view>
+        <rich-text nodes='<hr style="width:100%;color:gray;"/>'></rich-text>
+      </view>
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">如果页面的所有样式都自己写，还是挺麻烦的，也没有这个必要。腾讯封装了一套 UI 框架 WeUI，可以拿来用。</mp-cell>
+    <mp-cell ext-class="cellsClass">手机访问 weui.io，可以看到这套 UI 框架的效果。</mp-cell>
+    <mp-cell ext-class="cellsClass">
+      <image style="margin:0 auto;display:block;border-radius: 5%;"
+        src="https://www.wangbase.com/blogimg/asset/202010/bg2020100305.jpg"></image>
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">这一节就来看看，怎么使用这个框架的小程序版本 WeUI-WXSS，为我们的页面加上官方的样式。</mp-cell>
+    <mp-cell ext-class="cellsClass">首先，进入它的 GitHub 仓库，在dist/style目录下面，找到weui.wxss这个文件，将源码全部复制到你的app.wxss文件的头部。</mp-cell>
+    <mp-cell ext-class="cellsClass">然后，将page/home/home.wxml文件改成下面这样。</mp-cell>
+    <mp-cell ext-class="cellsClass">
+      <view style="border-radius:5%;background-color:white;padding:20rpx;">
+        {{value2}}
+      </view>
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">开发者工具导入项目代码，页面渲染结果如下。</mp-cell>
+    <mp-cell ext-class="cellsClass">
+      <image style="margin:0 auto;display:block;border-radius: 5%;"
+        src="https://www.wangbase.com/blogimg/asset/202010/bg2020100306.jpg"></image>
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">可以看到，加入 WeUI 框架以后，只要为按钮添加不同的 class，就能自动出现框架提供的样式。你可以根据需要，为页面选择不同的按钮。</mp-cell>
+    <mp-cell ext-class="cellsClass">这个示例中，[button] 元素使用了下面的class。</mp-cell>
+    <mp-cell ext-class="cellsClass">
+      <view style="border-radius:5%;background-color:white;padding:20rpx;">
+        <rich-text
+          nodes="<ul><li>weui-btn：按钮样式的基类</li><li>weui-btn_primary：主按钮的样式。如果是次要按钮，就使用weui-btn_default。</li><li>weui-btn_loading：按钮点击后，操作正在进行中的样式。该类内部需要用<i>元素，加上表示正在加载的图标。</li><li>weui-btn_disabled：按钮禁止点击的样式。</li></ul>">
+        </rich-text>
+      </view>
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">WeUI 提供了大量的元素样式，完整的清单可以查看这里。</mp-cell>
+    <mp-cell ext-class="cellsClass">这个示例的完整代码，可以到代码仓库查看。</mp-cell>
+    <mp-cell ext-class="cellsClass">
+      <view>
+        <text class="title">四、加入图片</text>
+      </view>
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">
+      <view>
+        <rich-text nodes='<hr style="width:100%;color:gray;"/>'></rich-text>
+      </view>
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">美观的页面不能光有文字，还必须有图片。小程序的 [image] 组件就用来加载图片。</mp-cell>
+    <mp-cell ext-class="cellsClass">打开home.wxml文件，将其改为如下代码。</mp-cell>
+    <mp-cell ext-class="cellsClass">
+      <view style="border-radius:5%;background-color:white;padding:20rpx;">
+        {{value3}}
+      </view>
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">开发者工具加载项目代码，页面的渲染结果如下，可以显示图片了。</mp-cell>
+    <mp-cell ext-class="cellsClass">
+      <image style="margin:0 auto;display:block;border-radius: 5%;"
+        src="https://www.wangbase.com/blogimg/asset/202010/bg2020100309.jpg"></image>
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">[image] 组件有很多属性，比如可以通过style属性指定样式。</mp-cell>
+    <mp-cell ext-class="cellsClass">
+      <view style="border-radius:5%;background-color:white;padding:20rpx;">
+        {{value4}}
+      </view>
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">
+      默认情况下，图片会占满整个容器的宽度（这个例子是 [view] 的宽度），上面代码通过style属性指定图片的高度和宽度（占据页面宽度的一半），渲染结果如下。
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">
+      <image style="margin:0 auto;display:block;border-radius: 5%;"
+        src="https://www.wangbase.com/blogimg/asset/202010/bg2020100310.jpg"></image>
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">当然，图片样式不一定写在 [image] 组件里面，也可以写在 WXSS 样式文件里面。</mp-cell>
+    <mp-cell ext-class="cellsClass">这个示例的完整代码，可以到代码仓库查看。</mp-cell>
+    <mp-cell ext-class="cellsClass">
+      <view>
+        <text class="title">五、图片轮播</text>
+      </view>
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">
+      <view>
+        <rich-text nodes='<hr style="width:100%;color:gray;"/>'></rich-text>
+      </view>
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">小程序原生的 [swiper] 组件可以提供图片轮播效果。</mp-cell>
+    <mp-cell ext-class="cellsClass">
+      <image style="margin:0 auto;display:block;border-radius: 5%;"
+        src="https://www.wangbase.com/blogimg/asset/202010/bg2020100311.jpg"></image>
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">上面页面的图片上面，有三个提示点，表示一共有三张图片，可以切换显示。</mp-cell>
+    <mp-cell ext-class="cellsClass">它的代码很简单，只需要改一下home.wxml文件即可。</mp-cell>
+    <mp-cell ext-class="cellsClass">
+      <view style="border-radius:5%;background-color:white;padding:20rpx;">
+        {{value5}}
+      </view>
+    </mp-cell>
+    <mp-cell ext-class="cellsClass">上面代码中，[swiper] 组件就是轮播组件，里面放置了三个 [swiper-item] 组件，表示有三个轮播项目，每个项目就是一个 [image] 组件。</mp-cell>
+    <mp-cell ext-class="cellsClass">[swiper] 组件的indicator-dots属性设置是否显示轮播点，autoplay属性设置是否自动播放轮播。它们的属性值都是一个布尔值，这里要写成{ {true} }。这种{ {...} }的语法，表示里面放置的是 JavaScript 代码，这个放在下一次讲解。</mp-cell>
+    <mp-cell ext-class="cellsClass">这个示例的完整代码，可以到代码仓库查看。</mp-cell>
+    <mp-cell ext-class="cellsClass">页面样式就讲到这里，下一篇教程讲解怎么在微信小程序里面加入 JavaScript 脚本，跟用户互动。</mp-cell>
+    <mp-cell ext-class="cellsClass">（完）</mp-cell>
+
+
+    <mp-cell ext-class="cellsClass">
+      <view style="border-radius:5%;background-color:#c1dceb;padding:30rpx;">
+        <view class="title-little">文档信息</view>
+        <view>
+          <rich-text nodes='<hr style="width:100%;color:black;"/>'></rich-text>
+        </view>
+        <view class="author">
+          <rich-text
+            nodes='<ul style="font-weight:border;"><li>版权声明：自由转载-非商用-非衍生-保持署名（创意共享3.0许可证）</li><li>发表日期： 2020年10月27日</li></ul>'>
+          </rich-text>
+        </view>
+      </view>
+    </mp-cell>
+  </mp-cells>
+</view>

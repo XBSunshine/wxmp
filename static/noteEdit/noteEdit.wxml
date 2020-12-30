@@ -1,0 +1,25 @@
+<mp-cells title="主题">
+  <mp-cell>
+    <input placeholder="请输入主题" value="{{title}}" disabled="{{!showButton}}" bindinput="bindKeyInput"
+      data-param="title"></input>
+  </mp-cell>
+</mp-cells>
+<mp-cells title="字体颜色">
+  <mp-cell>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" disabled="{{!showButton}}">
+      <view class="{{colors[index]}}" style="height:22px;">
+        <input placeholder="请选择颜色" disabled="{{true}}" value="{{array[index]}}"></input>
+      </view>
+    </picker>
+  </mp-cell>
+</mp-cells>
+<mp-cells title="内容">
+  <mp-cell>
+    <textarea placeholder='请输入内容' maxlength="-1" value="{{context}}" style="height:700rpx;width:100%;"
+      bindinput="bindKeyInput" data-param="context" disabled="{{!showButton}}"></textarea>
+  </mp-cell>
+</mp-cells>
+<view wx:if="{{showButton}}" style="margin-top:20rpx;">
+  <button class="weui-btn" type="primary" bindtap="doSave" style="width:100%;">保存</button>
+</view>
+<mp-toptips msg="{{tips.message}}" type="{{tips.type}}" show="{{tips.show}}"></mp-toptips>

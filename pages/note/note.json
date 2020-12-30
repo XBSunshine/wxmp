@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "随心记录",
+  "usingComponents": {
+    "mp-dialog": "/miniprogram_npm/weui-miniprogram/dialog/dialog",
+    "mp-slideview": "/miniprogram_npm/weui-miniprogram/slideview/slideview"
+  }
+}

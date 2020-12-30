@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "封面编辑",
+  "usingComponents": {
+    "mp-toptips": "/miniprogram_npm/weui-miniprogram/toptips/toptips"
+  }
+}

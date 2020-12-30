@@ -1,0 +1,15 @@
+<!--static/audio/audioView.wxml-->
+<mp-cells footer="{{name}} - {{author}}">
+<image style="width:750rpx;" src="{{picture}}"></image>
+</mp-cells>
+<view hover-class="hoverClass" class="add_icon" bindtap="goToTop">
+  <image src="/image/top.png" style="height:42px;width:42px;"></image>
+</view>
+<mp-icon style="margin-top:20px;margin:0 auto;width:50px;display:block;" wx:if="{{ifshow}}" link icon="play"
+  color="green" size="{{50}}" bindtap="start">
+</mp-icon>
+<mp-icon style="margin-top:20px;margin:0 auto;width:50px;display:block;" wx:else link icon="pause" color="red"
+  size="{{50}}" bindtap="pause"></mp-icon>
+<mp-cells title="描述">
+  <mp-cell>{{describe}}</mp-cell>
+</mp-cells>

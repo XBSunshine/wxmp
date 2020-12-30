@@ -1,0 +1,22 @@
+<mp-cells title="名称">
+  <mp-cell>
+    <input placeholder="请输入名称" maxlength="8" value="{{name}}" bindinput="bindKeyInput" data-param="name"></input>
+  </mp-cell>
+</mp-cells>
+<mp-cells title="上传图片">
+  <mp-cell>
+   <image wx:if="{{ifChoose}}" slot="title" style="height:30px;width:30px;margin-top:-10px;margin-bottom:-10px;" src="/image/add.png" bindtap="chooseImg"></image>
+   <image wx:else slot="title" style="height:80px;width:80px;margin-top:-10px;margin-bottom:-10px;" src="{{img}}" bindtap="viewImg"></image>
+  </mp-cell>
+</mp-cells>
+<mp-cells title="描述">
+  <mp-cell>
+    <textarea placeholder='请输入描述' maxlength="35" value="{{remark}}" style="height:400rpx;width:100%;"
+      bindinput="bindKeyInput" data-param="remark"></textarea>
+  </mp-cell>
+</mp-cells>
+<view style="margin-top:20rpx;">
+  <button wx:if="{{loading}}" loading="{{loading}}" type="primary" style="width:100%;">保存</button>
+  <button wx:else  type="primary" bindtap="doSave" style="width:100%;">保存</button>
+</view>
+<mp-toptips msg="{{tips.message}}" type="{{tips.type}}" show="{{tips.show}}"></mp-toptips>

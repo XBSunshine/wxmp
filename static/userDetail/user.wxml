@@ -1,0 +1,11 @@
+<mp-cells title="用户详情">
+  <mp-cell icon="" value="昵称" footer="{{nickName}}"></mp-cell>
+  <mp-cell icon="" value="头像">
+    <image slot="footer" style="width:30px;height:30px;margin-bottom:-10px;margin-top:-2px;"  src="{{avatarUrl}}"></image>
+  </mp-cell>
+  <mp-cell icon="" value="性别" footer="{{gender}}"></mp-cell>
+  <mp-cell icon="" value="国家" footer="{{country}}"></mp-cell>
+  <mp-cell icon="" value="省份" footer="{{province}}"></mp-cell>
+  <mp-cell icon="" value="城市" footer="{{city}}"></mp-cell>
+  <mp-cell icon="" value="语言" footer="{{language}}"></mp-cell>
+</mp-cells>

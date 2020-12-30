@@ -1,0 +1,7 @@
+.cellExtClass{
+  height: 50px;
+}
+.hoverClass {
+  opacity:0.6;
+  color: gray;
+}

@@ -1,0 +1,23 @@
+<mp-cells title="开关控制">
+  <mp-cell icon="" value="允许微信使用摄像头的开关">
+    <switch slot="footer" checked="{{true}}"/>
+  </mp-cell>
+  <mp-cell icon="" value="允许微信使用定位的开关">
+    <switch slot="footer" checked="{{true}}"/>
+  </mp-cell>
+  <mp-cell icon="" value="允许微信使用麦克风的开关">
+    <switch slot="footer" checked="{{true}}"/>
+  </mp-cell>
+  <mp-cell icon="" value="允许微信通知的开关">
+    <switch slot="footer" checked="{{true}}"/>
+  </mp-cell>
+  <mp-cell icon="" value="蓝牙的系统开关">
+    <switch slot="footer" checked="{{true}}" />
+  </mp-cell>
+  <mp-cell icon="" value="地理位置的系统开关">
+    <switch slot="footer" checked="{{true}}"/>
+  </mp-cell>
+  <mp-cell icon="" value="Wi-Fi 的系统开关">
+    <switch slot="footer" checked="{{true}}"/>
+  </mp-cell>
+</mp-cells>

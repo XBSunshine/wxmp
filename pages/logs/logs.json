@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "启动日志",
+  "usingComponents": {
+    "mp-icon": "/miniprogram_npm/weui-miniprogram/icon/icon"
+  }
+}

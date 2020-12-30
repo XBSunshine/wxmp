@@ -1,0 +1,186 @@
+<!--static/dataPage/loveGrave.wxml-->
+<mp-cells>
+  <mp-cell>
+    <view slot="title">
+      <text>坏的婚姻是什么，就是耍流氓，是囚笼，是内心的不甘，是痛苦的根源</text>
+    </view>
+  </mp-cell>
+</mp-cells>
+<mp-cells>
+  <mp-cell>
+    <view><text>一、一个男人娶什么样的女人，决定他将来的生活品质。一个女人嫁什么样的男人，决定她将来生活的希望。</text></view>
+  </mp-cell>
+</mp-cells>
+<mp-cells>
+  <mp-cell>
+    <view><text>二、婚姻里的指责和抱怨不是因为“我爱你”，而是因为“我情绪管理不好”。指责不是爱，而是婚姻的杀手。</text></view>
+  </mp-cell>
+</mp-cells>
+<mp-cells>
+  <mp-cell>
+    <view><text>三、带给一个女人希望的不是爱情，而是男人的责任；带给一个男人安全感的也不是爱情，而是女人对家庭的付出。——涂磊</text></view>
+  </mp-cell>
+</mp-cells>
+<mp-cells>
+  <mp-cell>
+    <view>
+      <image style="margin:0 auto;display:block;" src="/image/1b4c510fd9f9d72afb8929c0b4446031369bbbf5.jpeg"></image>
+    </view>
+  </mp-cell>
+</mp-cells>
+<mp-cells>
+  <mp-cell>
+    <view><text>四、没有爱情的婚姻是不道德的婚姻，仅有爱情的婚姻是不现实的婚姻。</text></view>
+  </mp-cell>
+</mp-cells>
+<mp-cells>
+  <mp-cell>
+    <view><text>五、女人要能干，但要给男人机会，女人要聪明，但不要太精明！懂得男人的自尊，便知道如何驾驭，了解男人的脆弱，便明白什么是引领！</text></view>
+  </mp-cell>
+</mp-cells>
+<mp-cells>
+  <mp-cell>
+    <view><text>六、男人错过了想娶的那个女人，就会变得随意，女人错过了那个想嫁的男人，就会变得挑剔。随意的原因是，反正都不是你，挑剔的原因是，谁都不如你。</text></view>
+  </mp-cell>
+</mp-cells>
+<mp-cells>
+  <mp-cell>
+    <view>
+      <image style="margin:0 auto;display:block;" src="/image/2e2eb9389b504fc27f8fb53886b3af1491ef6daa.jpeg"></image>
+    </view>
+  </mp-cell>
+</mp-cells>
+<mp-cells>
+  <mp-cell>
+    <view><text>七、女人最容易高估的两件事情：一是自己的美貌，二是男人的感情；男人最容易高估的两件事情：一是自己的魅力，二是前女友对自己的感情。</text></view>
+  </mp-cell>
+</mp-cells>
+<mp-cells>
+  <mp-cell>
+    <view><text>八、男女间不存在也不可能存在友谊，所谓男女之间的友谊，不外是爱情的开端或残余，或者就是爱情本身。</text></view>
+  </mp-cell>
+</mp-cells>
+<mp-cells>
+  <mp-cell>
+    <view><text>九、遇到那种始终不在一个频道死活聊不到一个点上的人就别强求了，也千万不要试图努力，越努力越绝望。在婚姻里，精神上的门当户对比物质更重要。三观不同，真的不能结婚。</text></view>
+  </mp-cell>
+</mp-cells>
+<mp-cells>
+  <mp-cell>
+    <view>
+      <image style="margin:0 auto;display:block;" src="/image/9825bc315c6034a84a3f5284aa7d01510823764d.jpeg"></image>
+    </view>
+  </mp-cell>
+</mp-cells>
+<mp-cells>
+  <mp-cell>
+    <view><text>十、当你的丈夫为你改变的时候，为你慢慢改变自己的饿生活习惯的时候，哪怕是一个细小的改变，你都要表扬他。</text></view>
+  </mp-cell>
+</mp-cells>
+<mp-cells>
+  <mp-cell>
+    <view><text>十一、男人喜欢靠眼睛爱，女人喜欢靠耳朵爱，男人喜欢看到漂亮的事物，女人喜欢听到甜美的话语。但是一旦当这种感官消失的时候，外力就开始介入。——涂磊</text></view>
+  </mp-cell>
+</mp-cells>
+<mp-cells>
+  <mp-cell>
+    <view><text>十二、没有一无是处的爱人，只有内心狭隘的自己！夫妻之间永远是一荣俱荣，一损俱损！你在获得赞美的同时，一定有爱人的付出，你在遭受非议的同时，心疼你的一定是爱人！——涂磊</text></view>
+  </mp-cell>
+</mp-cells>
+<mp-cells>
+  <mp-cell>
+    <view>
+      <image style="margin:0 auto;display:block;" src="/image/aa64034f78f0f736c78b9f3b6b3bfb1cebc41302.jpeg"></image>
+    </view>
+  </mp-cell>
+</mp-cells>
+<mp-cells>
+  <mp-cell>
+    <view><text>十三、不要以为结婚了，彼此就可以为所欲为了，若是不懂得经营，爱情终究会在平淡如水的岁月里消亡。</text></view>
+  </mp-cell>
+</mp-cells>
+<mp-cells>
+  <mp-cell>
+    <view><text>十四、男人总是会喜欢一些外表光鲜亮丽的东西，而女人则喜欢听一些甜言蜜语。然而，依靠这些的感情是长久不了的，只有真心实意的感情才能长长久久。</text></view>
+  </mp-cell>
+</mp-cells>
+<mp-cells>
+  <mp-cell>
+    <view>
+      <text>十五、男人在征服女人的时候，为了得到，往往没有底线，而在始乱终弃时，为了逃离，却常常以原则为借口。女人恰恰相反，在被男人征服之前，往往恪守原则，欲擒故纵，却在被抛弃时，常常放弃底线，百般恳求！男人利用原则，是为了逃离，女人利用原则，是为了欲擒故纵！男人放弃底线，是为了得到，女人突破底线，是因为害怕失去！——涂磊</text>
+    </view>
+  </mp-cell>
+</mp-cells>
+<mp-cells>
+  <mp-cell>
+    <view>
+      <image style="margin:0 auto;display:block;" src="/image/d8f9d72a6059252d6d5fd8e254f54b3e5ab5b904.jpeg"></image>
+    </view>
+  </mp-cell>
+</mp-cells>
+<mp-cells>
+  <mp-cell>
+    <view><text>十六、婚姻当中美丑可以不匹配，贫富可以不平均，但忠诚一定是对等的。</text></view>
+  </mp-cell>
+</mp-cells>
+<mp-cells>
+  <mp-cell>
+    <view><text>十七、一个男人对一个女人真正的爱，是愿意为她放下身架，放低姿态。能把他最柔软的地方，显现给这个女人看；一个女人真爱一个男人，哪怕再柔弱，也会表现出某种刚强，那代表着想要跟一个男人在一起的决绝。</text>
+    </view>
+  </mp-cell>
+</mp-cells>
+<mp-cells>
+  <mp-cell>
+    <view><text>十八、男人在最失意的时候是最容易出轨的，因为在这个时候他非常的迷惘，他非常需要一个坚定地能支持他帮助他的女人出现，这个女人他爱不爱不重要，关键是这个女人能认可他的价值。</text></view>
+  </mp-cell>
+</mp-cells>
+<mp-cells>
+  <mp-cell>
+    <view>
+      <image style="margin:0 auto;display:block;" src="/image/dbb44aed2e738bd4be1bdbf2c1e5cfd3267ff9aa.jpeg"></image>
+    </view>
+  </mp-cell>
+</mp-cells>
+<mp-cells>
+  <mp-cell>
+    <view><text>十九、婚姻，对于不愿付出的人来说是坟墓，对于懂得爱的含义的人来说是爱的乐园。</text></view>
+  </mp-cell>
+</mp-cells>
+<mp-cells>
+  <mp-cell>
+    <view>
+      <text>二十、爱情当中，越多付出，就有越多在意。虽不求回报，但一定希望能够得到对方的珍惜和认可。所以爱一个人，请看到她的付出，理解她的在意，怜惜她的不易，在乎她的在乎！这是对于爱情的尊重，也是对于爱人最好的回馈！</text>
+    </view>
+  </mp-cell>
+</mp-cells>
+<mp-cells>
+  <mp-cell>
+    <view><text>二十一、人这一生可能不止爱上一个人，但能让你全心全意奉献，掏心掏肺付出的只有一个人！掏空自己只有一次，人不是容器可以保持特定的容量，人是一根弹簧，满额负重一次便回不了当初的模样！</text></view>
+  </mp-cell>
+</mp-cells>
+<mp-cells>
+  <mp-cell>
+    <view>
+      <image style="margin:0 auto;display:block;" src="/image/dbb44aed2e738bd4be1bdbf2c1e5cfd3267ff9aa.jpeg"></image>
+    </view>
+  </mp-cell>
+</mp-cells>
+<mp-cells>
+  <mp-cell>
+    <view><text>二十二、对于自己所爱人的伤害，一次是无心，两次是有意，第三次是无耻；对于自己所爱的人的包容，一次是大度，两次是宽容，第三次是犯贱。</text></view>
+  </mp-cell>
+</mp-cells>
+<mp-cells>
+  <mp-cell>
+    <view>
+      <text>二十三、一段感情中，一个人冷落另一个人，可以有种种的理由。但归根结底无非是爱得不够。发自内心的挚爱，会令人因自觉冷落爱人而心生愧疚，自然对爱人多一份耐心，愿意花费更多时间和精力照顾对方的感受。真爱求不来，要不到。如果感情已经稀薄，与其卑微的祈求，不如坦然的分手！</text>
+    </view>
+  </mp-cell>
+</mp-cells>
+<mp-cells>
+  <mp-cell>
+    <view>
+      <text>二十四、尊重你的男人，会主动和你谈钱，因为他知道娶你就应该给你好的生活，这是一个男人的责任和义务，他不忍心让你跟他吃糠野菜。当然前提是你是一个自尊自爱的女人！不尊重你的男人，只要你跟他谈钱，他就会说你嫌贫爱富，认为你看上的不是他的人。或者如果你谈钱，只管开价就是，但你也只是个数字，别谈尊重！记住：愚蠢的女人常常讨价，甚至抬价，所以廉价！聪明的女人从不开价，更不还价，所以无价！</text>
+    </view>
+  </mp-cell>
+</mp-cells>

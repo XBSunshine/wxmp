@@ -1,0 +1,50 @@
+<mp-cells ext-class="extClass" title="搞笑好玩">
+  <mp-cell link hover bindtap="bindtapview" data-param="https://sharkle.com/" value="点击跳转随机网址" footer="https://sharkle.com/">
+    <mp-icon slot="icon" icon="link" color="purple" size="{{12}}"></mp-icon>
+  </mp-cell>
+  <mp-cell link hover bindtap="bindtapview" data-param="https://labs.fluuu.id/box-physics/" value="破碎方块" footer="https://labs.fluuu.id/box-physics/">
+    <mp-icon slot="icon" icon="link" color="purple" size="{{12}}"></mp-icon>
+  </mp-cell>
+</mp-cells>
+<mp-cells ext-class="extClass" title="设计">
+  <mp-cell link hover bindtap="bindtapview" data-param="https://developers.weixin.qq.com/miniprogram/dev/framework/" value="小程序开发" footer="https://developers.weixin.qq.com/min...">
+    <mp-icon slot="icon" icon="link" color="purple" size="{{12}}"></mp-icon>
+  </mp-cell>
+  <mp-cell link hover bindtap="bindtapview" data-param="https://element.eleme.cn/#/zh-CN/" value="Element-UI设计" footer="https://element.eleme.cn/#/zh-CN/">
+    <mp-icon slot="icon" icon="link" color="purple" size="{{12}}"></mp-icon>
+  </mp-cell>
+  <mp-cell link hover bindtap="bindtapview" data-param="https://cn.vuejs.org/v2/guide/index.html" value="VUE设计" footer="https://cn.vuejs.org/v2/guide/index.html">
+    <mp-icon slot="icon" icon="link" color="purple" size="{{12}}"></mp-icon>
+  </mp-cell>
+  <mp-cell link hover bindtap="bindtapview" data-param="https://lanhuapp.com/web/#/user/login" value="蓝湖页面设计" footer="https://lanhuapp.com/web/#/user/login">
+    <mp-icon slot="icon" icon="link" color="purple" size="{{12}}"></mp-icon>
+  </mp-cell>
+  <mp-cell link hover bindtap="bindtapview" data-param="https://www.iconfont.cn/search/index?searchType=icon&q=%E5%AF%86%E7%A0%81" value="阿里巴巴icon" footer="https://www.iconfont.cn/search/index...">
+    <mp-icon slot="icon" icon="link" color="purple" size="{{12}}"></mp-icon>
+  </mp-cell>
+</mp-cells>
+<mp-cells ext-class="extClass" title="协同">
+  <mp-cell link hover bindtap="bindtapview" data-param="https://efreight.worktile.com/tasks" value="worktile" footer="https://efreight.worktile.com/tasks">
+    <mp-icon slot="icon" icon="link" color="purple" size="{{12}}"></mp-icon>
+  </mp-cell>
+</mp-cells>
+<mp-cells ext-class="extClass" title="资料">
+  <mp-cell link hover bindtap="bindtapview" data-param="https://www.cnblogs.com/HawkFalcon/p/7986983.html" value="mybatis传参说明" footer="https://www.cnblogs.com/Hawk...">
+    <mp-icon slot="icon" icon="link" color="purple" size="{{12}}"></mp-icon>
+  </mp-cell>
+  <mp-cell link hover bindtap="bindtapview" data-param="ttps://blog.csdn.net/z57354658/article/details/82108263" value="oauth2相关介绍" footer="https://blog.csdn.net/z57354658/ar...">
+    <mp-icon slot="icon" icon="link" color="purple" size="{{12}}"></mp-icon>
+  </mp-cell>
+  <mp-cell link hover bindtap="bindtapview" data-param="http://www.ruanyifeng.com/blog/2019/04/oauth_design.html" value="oauth2相关介绍-阮一峰" footer="http://www.ruanyifeng.com/...">
+    <mp-icon slot="icon" icon="link" color="purple" size="{{12}}"></mp-icon>
+  </mp-cell>
+  <mp-cell link hover bindtap="bindtapview" data-param="https://www.cnblogs.com/10JQKA/archive/2019/04/04/10650340.html" value="js数组API" footer="https://www.cnblogs.com/10JQKA/ar...">
+    <mp-icon slot="icon" icon="link" color="purple" size="{{12}}"></mp-icon>
+  </mp-cell>
+  <mp-cell link hover bindtap="bindtapview" data-param="https://music.sonimei.cn/" value="全网音乐下载" footer="https://music.sonimei.cn/">
+    <mp-icon slot="icon" icon="link" color="purple" size="{{12}}"></mp-icon>
+  </mp-cell>
+</mp-cells>
+<mp-dialog title="详情" show="{{dialogShow}}" >
+  <textarea auto-height class="weui-textarea" value="{{website}}" disabled="{{true}}" />
+</mp-dialog>

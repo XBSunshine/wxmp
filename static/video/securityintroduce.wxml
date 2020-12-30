@@ -1,0 +1,36 @@
+<mp-cells><video
+    src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"
+    enable-danmu danmu-btn show-center-play-btn='{{false}}' show-play-btn="{{true}}" controls
+    picture-in-picture-mode="{{['push', 'pop']}}" style="width:750rpx;"></video></mp-cells>
+<mp-cells><video src="http://doc.yctop.com/BillTemplate_ch_ti_1584948803702_001.mp4" enable-danmu danmu-btn
+    show-center-play-btn='{{false}}' show-play-btn="{{true}}" controls picture-in-picture-mode="{{['push', 'pop']}}"
+    style="width:750rpx;"></video></mp-cells>
+<mp-cells><video src="http://doc.yctop.com/BillTemplate_ch_ti_1584948320388_002.mp4" enable-danmu danmu-btn
+    show-center-play-btn='{{false}}' show-play-btn="{{true}}" controls picture-in-picture-mode="{{['push', 'pop']}}"
+    style="width:750rpx;"></video></mp-cells>
+<mp-cells><video src="http://doc.yctop.com/BillTemplate_ch_1588930026825_003.mp4" enable-danmu danmu-btn
+    show-center-play-btn='{{false}}' show-play-btn="{{true}}" controls picture-in-picture-mode="{{['push', 'pop']}}"
+    style="width:750rpx;"></video></mp-cells>
+<mp-cells><video src="http://doc.yctop.com/BillTemplate_ch_ti_1584948362098_004.mp4" enable-danmu danmu-btn
+    show-center-play-btn='{{false}}' show-play-btn="{{true}}" controls picture-in-picture-mode="{{['push', 'pop']}}"
+    style="width:750rpx;"></video></mp-cells>
+<mp-cells><video src="http://doc.yctop.com/BillTemplate_ch_ti_1584948379724_005.mp4" enable-danmu danmu-btn
+    show-center-play-btn='{{false}}' show-play-btn="{{true}}" controls picture-in-picture-mode="{{['push', 'pop']}}"
+    style="width:750rpx;"></video></mp-cells>
+<!-- <mp-cells ext-class="extClass" title="视频说明">
+  <mp-cell style="font-size:large;font-weight:600;">小窗特性说明</mp-cell>
+  <mp-cell>video 小窗支持以下三种触发模式（在组件上设置 picture-in-picture-mode 属性）：</mp-cell>
+  <mp-cell>1.push 模式，即从当前页跳转至下一页时出现小窗（页面栈push）</mp-cell>
+  <mp-cell>2.pop 模式，即离开当前页面时触发（页面栈pop）</mp-cell>
+  <mp-cell>3.以上两种路由行为均触发小窗</mp-cell>
+  <mp-cell>此外，小窗还支持以下特性：</mp-cell>
+  <mp-cell>* 小窗容器尺寸会根据原组件尺寸自动判断</mp-cell>
+  <mp-cell>* 点击小窗，用户会被导航回小窗对应的播放器页面</mp-cell>
+  <mp-cell>* 小窗出现后，用户可点击小窗右上角的关闭按钮或调用 context.exitPictureInPicture() 接口关闭小窗</mp-cell>
+  <mp-cell>当播放器进入小窗模式后，播放器所在页面处于 hide 状态(触发 onHide 生命周期)，该页面不会被销毁。当小窗被关闭时，播放器所在页面会被 unload (触发 onUnload 生命周期)。</mp-cell>
+</mp-cells>
+<mp-cells ext-class="extClass" title="代码示例">
+  <mp-cell>
+    <textarea auto-height class="weui-textarea" value=" <video src='' binderror='videoErrorCallback' danmu-list='{{danmuList}}' enable-danmu danmu-btn show-center-play-btn='{{false}}' controls ></video>" disabled="{{true}}"/>
+  </mp-cell>
+</mp-cells> -->

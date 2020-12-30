@@ -1,0 +1,18 @@
+.add_icon {
+  position: fixed;
+  width: 42px;
+  height: 42px;
+  bottom: 30px;
+  right: 20px;
+  opacity:1;
+  background-color:#03be03;
+  border-radius: 50%;
+  z-index: 100;
+}
+
+.hoverClass {
+  opacity:0.6;
+}
+.cellExtClass{
+  background-color: rgb(226, 226, 226);
+}

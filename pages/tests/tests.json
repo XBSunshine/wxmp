@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "音乐欣赏",
+  "usingComponents": {
+    "recycle-view": "miniprogram-recycle-view/recycle-view",
+    "recycle-item": "miniprogram-recycle-view/recycle-item",
+    "mp-col": "@miniprogram-component-plus/col",
+    "mp-row": "@miniprogram-component-plus/row",
+    "mp-icon": "/miniprogram_npm/weui-miniprogram/icon/icon"
+  }
+}

@@ -1,0 +1,40 @@
+<mp-cells title="设备">
+  <mp-cell icon="" value="设备品牌：" footer="{{brand}}"></mp-cell>
+  <mp-cell icon="" value="设备型号：" footer="{{model}}"></mp-cell>
+  <mp-cell icon="" value="设备像素比：" footer="{{pixelRatio}}"></mp-cell>
+</mp-cells>
+<mp-cells title="尺寸">
+  <mp-cell icon="" value="屏幕宽度(px)：" footer="{{screenWidth}}"></mp-cell>
+  <mp-cell icon="" value="屏幕高度(px)：" footer="{{screenHeight}}"></mp-cell>
+  <mp-cell icon="" value="状态栏的高度(px)：" footer="{{statusBarHeight}}"></mp-cell>
+</mp-cells>
+<mp-cells title="语言">
+  <mp-cell icon="" value="微信设置的语言：" footer="{{language}}"></mp-cell>
+</mp-cells>
+<mp-cells title="微信">
+  <mp-cell icon="" value="微信版本号：" footer="{{version}}"></mp-cell>
+  <mp-cell icon="" value="操作系统及版本：" footer="{{system}}"></mp-cell>
+</mp-cells>
+<mp-cells title="开关">
+  <mp-cell icon="" value="允许微信使用摄像头的开关">
+    <switch slot="footer" checked="{{cameraAuthorized}}" disabled="{{true}}"/>
+  </mp-cell>
+  <mp-cell icon="" value="允许微信使用定位的开关">
+    <switch slot="footer" checked="{{locationAuthorized}}" disabled="{{true}}"/>
+  </mp-cell>
+  <mp-cell icon="" value="允许微信使用麦克风的开关">
+    <switch slot="footer" checked="{{microphoneAuthorized}}" disabled="{{true}}"/>
+  </mp-cell>
+  <mp-cell icon="" value="允许微信通知的开关">
+    <switch slot="footer" checked="{{notificationAuthorized}}" disabled="{{true}}"/>
+  </mp-cell>
+  <mp-cell icon="" value="蓝牙的系统开关">
+    <switch slot="footer" checked="{{bluetoothEnabled}}" disabled="{{true}}"/>
+  </mp-cell>
+  <mp-cell icon="" value="地理位置的系统开关">
+    <switch slot="footer" checked="{{locationEnabled}}" disabled="{{true}}"/>
+  </mp-cell>
+  <mp-cell icon="" value="Wi-Fi 的系统开关">
+    <switch slot="footer" checked="{{wifiEnabled}}" disabled="{{true}}"/>
+  </mp-cell>
+</mp-cells>
