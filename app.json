@@ -23,7 +23,13 @@
     "pages/note/note",
     "static/noteEdit/noteEdit",
     "pages/cover/cover",
-    "pages/cover/edit/edit"
+    "pages/cover/edit/edit",
+    "static/dataPage/publicTopic-javabianchengbingfa",
+    "static/dataPage/publicTopic-rabbitMQmianshi",
+    "static/dataPage/publicTopic-redismianshi",
+    "static/dataPage/publicTopic-Dubbomianshi",
+    "static/dataPage/publicTopic-zookeepermianshi",
+    "static/dataPage/publicTopic-gitmianshi"
   ],
   "window": {
     "backgroundTextStyle": "light",

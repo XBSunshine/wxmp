@@ -36,45 +36,45 @@ module.exports.json = {
     },
     {
       "icon": "link",
-      "title": "微信小程序入门教程之五：扩展框架",
+      "title": "公众号-Java 并发编程（一）",
       "color": "purple",
       "type": "outline",
-      "page": ""
+      "page": "publicTopic-javabianchengbingfa"
     },
     {
       "icon": "link",
-      "title": "微信小程序入门教程之六：基础信息",
+      "title": "公众号-RabbitMQ-面试知识点",
       "color": "purple",
       "type": "outline",
-      "page": ""
+      "page": "publicTopic-rabbitMQmianshi"
     },
     {
       "icon": "link",
-      "title": "微信小程序入门教程之七：配置文件",
+      "title": "公众号-Redis 面试知识点",
       "color": "purple",
       "type": "outline",
-      "page": ""
+      "page": "publicTopic-redismianshi"
     },
     {
       "icon": "link",
-      "title": "微信小程序入门教程之八：合法域名",
+      "title": "公众号-Dubbo 面试知识点",
       "color": "purple",
       "type": "outline",
-      "page": ""
+      "page": "publicTopic-Dubbomianshi"
     },
     {
       "icon": "link",
-      "title": "微信小程序入门教程之九：云开发",
+      "title": "公众号-Zookeeper 面试知识点",
       "color": "purple",
       "type": "outline",
-      "page": ""
+      "page": "publicTopic-zookeepermianshi"
     },
     {
       "icon": "link",
-      "title": "微信小程序入门教程之十：其他框架",
+      "title": "公众号-分布式版本控制-Git",
       "color": "purple",
       "type": "outline",
-      "page": ""
+      "page": "publicTopic-gitmianshi"
     },
     {
       "icon": "link",
